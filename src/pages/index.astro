@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Product Review Card">
+	<main>
+
+
+		<div class=" font-Montserrat min-w-[350px] md:flex  bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden ">
+		
+		<div class=" md:w-[300px]">
+			<picture>
+				<img class="  hidden md:block" src="image-product-desktop.jpg" alt="">
+				<img class="  md:hidden" src="image-product-mobile.jpg" alt="">
+			</picture>
+		</div>
+
+		<div class=" p-5 space-y-4 md:space-y-5 flex flex-col justify-center md:w-[300px]">
+
+			<h3 class="text-[#6c7289] tracking-tight font-light text-sm">P E R F U M E</h3>
+			<h1 class=" font-Fraunces font-bold text-4xl">Gabrielle Essence Eau De Parfum</h1>
+			<p class="text-[#6c7289] text-sm text-balance">A floral, solar and voluptuous interpretation composed by Oliver Ploge, Perfume-Creator for the house of CHANEL</p>
+
+			<div class=" flex items-center space-x-5">
+				<p class=" font-Fraunces text-4xl font-bold text-[#3c8067]">$149.99 </p>
+				<p class="text-[#6c7289] text-sm font-light  line-through">$169.99</p>
+			</div>
+
+			<button class=" flex items-center space-x-3 bg-[#3c8067] hover:bg-[#214639] ease-in-out duration-200 text-white w-full place-content-center py-4 rounded-2xl">
+				<svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class=" h-5 icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+				<span>Add to Cart</span>
+				</button>
+
+		</div>
+
+	</div>
+
+	</main>
+</Layout>
+
+
